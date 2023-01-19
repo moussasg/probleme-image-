@@ -1,24 +1,21 @@
 import './App.css';
-import Index  from "./Profile/component/index.jsx"
-import Const from './Profile/component/constantes.js/const';
-import Img from "./Profile/component/monimg.JPG"
-import Img1 from "./Profile/component/karim.jpg"
-import Button from "../src/button/index.jsx"
+import React from 'react';
+import Fulln  from "./Profile/component/fullname/index.jsx"
+import Info from './constants/const.js'
 function App() {                                                                 
   return (
     <>
-      {Const.map((el) => (
+      {Info.map((el) => (
         <div className='cont'>
-          <Index OurProp={el}/>
+          <Fulln OurProp={el}/>
           <div className='haut'>
-         <img id="mou" src={el.Monimg}/>
+         <img id="mou" src={el.Monimg1} alt="" />
          </div>
          <div className='dess'>
-         <img src={el.Monimg1}/>
+         <img src={el.Monimg} alt=""/>
          </div>
          </div>
     ))} 
-          <Button> </Button>
     </>
   ) };
 export default App;

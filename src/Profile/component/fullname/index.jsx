@@ -1,4 +1,4 @@
-import style from "./style.css"
+import React from "react"
 export default function FullName({OurProp}) {
     return (
       <div className="gr">
