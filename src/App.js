@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
+import Index  from "./Profile/component/index.jsx"
+import Const from './Profile/component/constantes.js/const';
+import Img from "./Profile/component/monimg.JPG"
+import Img1 from "./Profile/component/karim.jpg"
+import Button from "../src/button/index.jsx"
+function App() {                                                                 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+    <>
+      {Const.map((el) => (
+        <div className='cont'>
+          <Index OurProp={el}/>
+          <div className='haut'>
+         <img id="mou" src={el.Monimg}/>
+         </div>
+         <div className='dess'>
+         <img src={el.Monimg1}/>
+         </div>
+         </div>
+    ))} 
+          <Button> </Button>
+    </>
+  ) };
 export default App;
