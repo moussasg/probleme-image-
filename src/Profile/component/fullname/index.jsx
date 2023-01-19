@@ -1,4 +1,5 @@
 import React from "react"
+import style from "./style.css"
 export default function FullName({OurProp : {nom ,hobbies,Prof }}) {
     return (
       <div className="gr">
