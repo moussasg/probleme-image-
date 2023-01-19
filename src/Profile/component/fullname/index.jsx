@@ -1,10 +1,10 @@
 import React from "react"
-export default function FullName({OurProp}) {
+export default function FullName({OurProp : {nom ,hobbies,Prof }}) {
     return (
       <div className="gr">
-        <h1> FullName :  {OurProp.nom} </h1>
-        <h2> Hobbies  : {OurProp.hobbies}</h2>
-        <h3> Profession  : {OurProp.Prof}</h3> 
+        <h1> FullName :  {nom} </h1>
+        <h2> Hobbies  : {hobbies}</h2>
+        <h3> Profession  : {Prof}</h3> 
         </div>
       )
     }    
